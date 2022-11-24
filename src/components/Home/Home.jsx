@@ -28,7 +28,7 @@ const Home = () => {
             <div className="container">
                 <div className="text">
                     <h1>Fill up this form!</h1>
-                    <h1>Faces :  </h1>
+                    <h1>Faces : {isMatched} </h1>
                     <form className="form">
                         <WebcamCapture/>
                         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
