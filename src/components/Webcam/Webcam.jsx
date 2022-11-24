@@ -24,7 +24,6 @@ export const WebcamCapture = () => {
 
 
     return (
-        
         <div className="webcam-container">
             <div className="webcam-img">
 
@@ -49,7 +48,7 @@ export const WebcamCapture = () => {
                         e.preventDefault();
                         capture();
                     }}
-                        className="webcam-btn" id="snap">Capture</button>
+                        className="webcam-btn">Capture</button>
                 }
             </div>
         </div>

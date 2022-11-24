@@ -1,4 +1,4 @@
-npm run stsrt{
+{
   "name": "webcam",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,6 @@ npm run stsrt{
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy" : "https://5l4jeuu4ng.execute-api.us-east-1.amazonaws.com/dev/comparefaces/",
   "eslintConfig": {
     "extends": [
       "react-app",
