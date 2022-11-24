@@ -34,6 +34,8 @@ const Home = () => {
                         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                         <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} />
                         <button type="submit" id="login-button" onClick={(e) => submitForm(e)}>Submit</button>
+                        <button onClick={isMatched}>Fetch data</button>
+
                     </form>
                 </div>
             </div>
