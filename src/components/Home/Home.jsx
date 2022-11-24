@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './homeStyles.css'
 import { WebcamCapture} from '../Webcam/Webcam'
+import {compareFaces} from '../../services/FacesService'
 
 
 const Home = () => {
@@ -14,13 +15,20 @@ const Home = () => {
         setName('');
         setEmail('');
     }
-
+   
+    const isMatched = (e) => {
+        compareFaces()
+        .then(response => {
+            console.log(response);
+        })
+    }
 
     return (
         <div className="home-container">
             <div className="container">
                 <div className="text">
                     <h1>Fill up this form!</h1>
+                    <h1>Faces :  </h1>
                     <form className="form">
                         <WebcamCapture/>
                         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
