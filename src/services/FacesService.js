@@ -1,10 +1,20 @@
 export async function compareFaces() {
 
     try{
-        const response = await fetch('/comparefaces');
-        return await response.json();
+        console.log("in service");
+       /* const response = await fetch('https://5l4jeuu4ng.execute-api.us-east-1.amazonaws.com/dev/compareFaces');
+        return await response.json(); 
+        */
+       const url ='https://5l4jeuu4ng.execute-api.us-east-1.amazonaws.com/dev/compareFaces'
+
+        var request = new XMLHttpRequest();
+request.open("GET", url, false);
+request.send(null);
+console.log(request.responseText);
+
     }catch(error) {
         return [];
     }
     
 }
+
